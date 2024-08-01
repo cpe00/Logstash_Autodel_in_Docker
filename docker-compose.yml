@@ -13,4 +13,4 @@ services:
       - ./outputlogs:/var/log/logstash/outputlogs
       - ./logstash.conf:/etc/logstash/conf.d/logstash.conf
       - ./createdfile.log:/home/link/createdfile.log
-      # - ./action.sh:/home/link/action.sh
+      - ./action.sh:/home/link/action.sh
