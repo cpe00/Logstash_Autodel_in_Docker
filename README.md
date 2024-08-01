@@ -41,3 +41,8 @@
     - [ ] set server "200.0.0.200"
     - [ ] set status enable
 	- [ ] end
+	
+# HA service	
+
+	
+	

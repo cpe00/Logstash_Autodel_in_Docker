@@ -1,20 +1,16 @@
 version: '3'
 services:
-
+             
   logstash:
     image: taothong/logstash_autodel:1.0
-    container_name: logstash_autodel  
+    container_name: logstash     
     ports:
-      - 5044:5044
-    networks:
-      - link        
+      - "5044:5044"
+      - "5044:5044/udp"
+    cap_add:
+      - SYS_PTRACE
     volumes:
+      - ./outputlogs:/var/log/logstash/outputlogs
+      - ./logstash.conf:/etc/logstash/conf.d/logstash.conf
       - ./createdfile.log:/home/link/createdfile.log
-      - ./outputlogs:/var/log/logstash/outputlogs 
-      - ./logstash.conf:/etc/logstash/conf.d/logstash.conf     
-    
-# ------------------------------------------------------------
-  
-networks:
-  link:
-    driver: bridge      
+      # - ./action.sh:/home/link/action.sh
