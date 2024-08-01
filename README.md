@@ -31,3 +31,13 @@
 ![fortisetloggui](images-md/fortisetloggui.png)
 
 ![configgui](images-md/configgui.png)
+
+####  command
+
+- [ ] show log syslogd setting
+- [ ] config log syslogd setting 
+    - [ ] set port 5044
+    - [ ] set format default
+    - [ ] set server "200.0.0.200"
+    - [ ] set status enable
+	- [ ] end
