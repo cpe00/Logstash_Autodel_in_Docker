@@ -5,9 +5,9 @@
 
 #### step 2 clone project to your server
 
-![linkclone](images-md/linkclone.png)
-
 - git clone https://github.com/Taothong98/Logstash_Autodel_in_Docker.git 
+
+![linkclone](images-md/linkclone.png)
 
 ![gitclone](images-md/gitclone.png)
 
