@@ -3,8 +3,6 @@
 - sudo apt install docker -y 
 - sudo apt install git -y 
 
-![installgit](images-md/installgit.png)
-
 #### step 2 clone project to your server
 
 ![linkclone](images-md/linkclone.png)
@@ -24,7 +22,6 @@
 #### You can check whether container start with this command 
 
 - sudo docker ps -a
-
 ![checkdocker](images-md/checkdocker.png)
 
 # Config FortiGate for send log to logstash
