@@ -8,7 +8,7 @@
 
 - git clone https://github.com/Taothong98/Logstash_Autodel_in_Docker.git 
 
-![linkclone](images-md/linkclone.png)
+![linkclone](images-md/linkclone2.png)
 
 ![gitclone](images-md/gitclone.png)
 
@@ -24,7 +24,7 @@
 
 - sudo docker ps -a
 
-![checkdocker](images-md/checkdocker.png)
+![checkdocker](images-md/checkdocker2.png)
 
 # Config FortiGate for send log to logstash
 
