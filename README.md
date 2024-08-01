@@ -1,4 +1,4 @@
-﻿## How to install ?
+﻿# How to install ?
    #### step 1 install docker and git
 - sudo apt install docker -y 
 - sudo apt install git -y 
@@ -20,12 +20,15 @@
 
 ![composeup](images-md/composeup.png)
 
-## Check service
+# Check service
 #### You can check whether container start with this command 
 
 - sudo docker ps -a
 
 ![checkdocker](images-md/checkdocker.png)
 
-## Config FortiGate for send log to logstash
+# Config FortiGate for send log to logstash
 
+![fortisetloggui](images-md/fortisetloggui.png)
+
+![configgui](images-md/configgui.png)
