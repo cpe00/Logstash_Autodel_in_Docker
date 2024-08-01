@@ -1,5 +1,6 @@
 ﻿# How to install ?
    #### step 1 install docker and git
+   
 - sudo apt install docker -y 
 - sudo apt install git -y 
 
@@ -22,6 +23,7 @@
 #### You can check whether container start with this command 
 
 - sudo docker ps -a
+
 ![checkdocker](images-md/checkdocker.png)
 
 # Config FortiGate for send log to logstash
