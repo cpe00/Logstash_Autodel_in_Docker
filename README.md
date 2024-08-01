@@ -42,7 +42,24 @@
     - [ ] set status enable
 	- [ ] end
 	
+	
+#### Check you output in this dir
+
+![diroutput](images-md/diroutput.png)
+
+#### customs file
+
+##### customs number of file in dir
+![actionfile](images-md/actionfile.png)
+
+##### customs port
+![logstashfile](images-md/logstashfile.png)
+	 and this file
+![dockercompose](images-md/dockercompose.png)
+	
+
 # HA service	
+
 
 	
 	
