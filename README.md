@@ -63,17 +63,5 @@
 ![dockercompose](images-md/dockercompose3.png)
 	
 
-# HA service	
-	
-- sudo apt install supervisor	
-	
-- mv /etc/supervisor/supervisord.conf /etc/supervisor/supervisord-ori.conf	
-
-- mv ./supervisord.conf /etc/supervisor/supervisord.conf	
-
--supervisorctl reread
-
--supervisorctl update
-
 
 	
