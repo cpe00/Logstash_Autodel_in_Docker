@@ -45,10 +45,10 @@
 	
 #### You can cheak output in this dirctory
 
+- cd outputlogs/
 ![diroutput](images-md/diroutput.png)
 
-#Optional
-
+# Optional
 #### You can customs port and number of file in this file
 ##### Customs number of file 
 - nano action.sh
