@@ -26,7 +26,7 @@
 
 ![checkdocker](images-md/checkdocker2.png)
 
-# Config FortiGate for send log to logstash
+# Config FortiGate for send syslog to logstash
 
 ![fortisetloggui](images-md/fortisetloggui.png)
 
@@ -68,7 +68,7 @@
 - nano docker-compose.yml
 ![dockercompose](images-md/dockercompose3.png)
 
-end	
+
 
 
 	
