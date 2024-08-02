@@ -1,6 +1,6 @@
 
 # จำนวนไฟล์ที่จะบันทึก
-NUMFILE="90"
+NUMFILE="3"
 
 # ตำแหน่งไดเรกทอรี
 DIRECTORY="/var/log/logstash/outputlogs"
