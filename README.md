@@ -68,7 +68,7 @@
 - nano docker-compose.yml
 ![dockercompose](images-md/dockercompose3.png)
 
-	
+end	
 
 
 	
