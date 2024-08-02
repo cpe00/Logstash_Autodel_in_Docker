@@ -60,7 +60,7 @@
 
 ##### If you customs port, you must config port of containers in this file
 - nano docker-compose.yml
-![dockercompose](images-md/dockercompose2.png)
+![dockercompose](images-md/dockercompose3.png)
 	
 
 # HA service	
