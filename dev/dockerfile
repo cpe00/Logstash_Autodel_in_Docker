@@ -1,0 +1,86 @@
+FROM debian:bookworm-backports
+RUN mkdir /home/link
+RUN apt update
+RUN apt-get install -y supervisor
+RUN apt install curl -y
+
+COPY dev/start.sh /home/link
+RUN chmod +x /home/link/start.sh
+
+COPY dev/supervisord.conf /etc/supervisor/supervisord.conf
+RUN chmod +x /etc/supervisor/supervisord.conf
+
+RUN apt install inotify-tools -y
+COPY dev/cheakdir.sh /home/link
+RUN chmod +x /home/link/cheakdir.sh
+
+COPY dev/action.sh /home/link
+RUN chmod +x /home/link/action.sh
+
+COPY dev/createdfile.log /home/link
+
+RUN mkdir /var/log/logstash
+RUN mkdir /var/log/logstash/outputlogs
+# --------------------------------------------------------------------
+
+
+RUN apt install gnupg -y
+RUN curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | gpg --dearmor -o /usr/share/keyrings/elastic.gpg
+RUN echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" | tee -a /etc/apt/sources.list.d/elastic-7.x.list
+RUN apt update
+RUN apt install logstash   
+COPY logstash.conf /etc/logstash/conf.d/
+
+
+
+CMD ["/bin/bash","-c","/home/link/start.sh"]
+
+EXPOSE 8080
+
+
+# COPY check_logstash.sh /usr/local/bin/
+# RUN chmod +x /usr/local/bin/check_logstash.sh
+
+
+
+
+
+
+    # service logstash restart
+
+    # service --status-all
+    # service logstash stop    
+    # service logstash start
+    # service logstash status
+    # Usage:  {start|force-start|stop|force-start|force-stop|status|restart}
+
+
+
+
+
+# docker build -t logstash-t .
+# docker run --name logstash-t -p 5044:5044 -d logstash-t
+# docker exec -it logstash-t bash   
+    # apt install curl
+    # curl -o fluent-apt-source.deb https://packages.treasuredata.com/lts/5/debian/bookworm/pool/contrib/f/fluent-lts-apt-source/fluent-lts-apt-source_2023.7.29-1_all.deb
+    # chown _apt: /root/fluent-apt-source.deb    # chmod 644 /root/fluent-apt-source.deb
+    # apt install -y ./fluent-apt-source.deb
+    # apt update
+    # apt install -y fluent-package
+
+    # cat /etc/fluent/fluentd.conf
+    # cd /var/log/fluent/
+    # fluentd -v
+
+
+# docker commit fluentd fluentdt2
+
+
+
+# docker tag testlink:latest taothong/testlink:1.0
+# docker push taothong/testlink:1
+
+
+
+
+

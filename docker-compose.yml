@@ -2,7 +2,10 @@ version: '3'
 services:
              
   logstash:
-    image: taothong/logstash_autodel:1.0
+    build:
+      context: .
+      dockerfile: dev/Dockerfile  
+    # image: taothong/logstash_autodel:1.0
     container_name: logstash     
     ports:
       - "5044:5044"
@@ -13,4 +16,4 @@ services:
       - ./outputlogs:/var/log/logstash/outputlogs
       - ./logstash.conf:/etc/logstash/conf.d/logstash.conf
       - ./createdfile.log:/home/link/createdfile.log
-      - ./action.sh:/home/link/action.sh
+
