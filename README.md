@@ -19,7 +19,7 @@
 
 ![composeup](images-md/composeup.png)
 
-# Check service
+#### step 4 Check service
 #### You can check whether container start with this command 
 
 - sudo docker ps -a
