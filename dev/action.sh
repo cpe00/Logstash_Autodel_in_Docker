@@ -1,10 +1,10 @@
 
 # จำนวนไฟล์ที่จะบันทึก
-NUMFILE="5"
+NUMFILE="100"
 
 # ตำแหน่งไดเรกทอรี
 DIRECTORY="/var/log/logstash/outputlogs"
-์๊
+
 # นับจำนวนไฟล์ในไดเรกทอรี
 FILE_COUNT=$(ls -1 "$DIRECTORY" | wc -l)
 

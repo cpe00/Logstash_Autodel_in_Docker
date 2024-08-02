@@ -31,56 +31,24 @@ RUN apt update
 RUN apt install logstash   
 COPY logstash.conf /etc/logstash/conf.d/
 
-
-
 CMD ["/bin/bash","-c","/home/link/start.sh"]
-
-EXPOSE 8080
-
-
-# COPY check_logstash.sh /usr/local/bin/
-# RUN chmod +x /usr/local/bin/check_logstash.sh
+EXPOSE 5044
 
 
+
+
+# docker build -t logstash_autodel .
+# docker tag logstash_autodel:latest taothong/logstash_autodel:2.0
+# docker run --name logstash_auto -p 5044:5044 -d taothong/logstash_autodel:2.0
+# docker exec -it logstash_auto bash   
 
 
 
 
     # service logstash restart
-
     # service --status-all
     # service logstash stop    
     # service logstash start
     # service logstash status
     # Usage:  {start|force-start|stop|force-start|force-stop|status|restart}
-
-
-
-
-
-# docker build -t logstash-t .
-# docker run --name logstash-t -p 5044:5044 -d logstash-t
-# docker exec -it logstash-t bash   
-    # apt install curl
-    # curl -o fluent-apt-source.deb https://packages.treasuredata.com/lts/5/debian/bookworm/pool/contrib/f/fluent-lts-apt-source/fluent-lts-apt-source_2023.7.29-1_all.deb
-    # chown _apt: /root/fluent-apt-source.deb    # chmod 644 /root/fluent-apt-source.deb
-    # apt install -y ./fluent-apt-source.deb
-    # apt update
-    # apt install -y fluent-package
-
-    # cat /etc/fluent/fluentd.conf
-    # cd /var/log/fluent/
-    # fluentd -v
-
-
-# docker commit fluentd fluentdt2
-
-
-
-# docker tag testlink:latest taothong/testlink:1.0
-# docker push taothong/testlink:1
-
-
-
-
 
