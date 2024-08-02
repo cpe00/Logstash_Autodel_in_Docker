@@ -48,10 +48,11 @@
 ![diroutput](images-md/diroutput.png)
 
 #Optional
+
 #### You can customs port and number of file in this file
 ##### Customs number of file 
 - nano action.sh
-![actionfile](images-md/actionfile2.png)
+![actionfile](images-md/actionfile3.png)
 
 ##### Customs port and Input
 - nano logstash.conf
