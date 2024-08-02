@@ -43,23 +43,22 @@
 	- [ ] end
 	
 	
-#### Check you output in this dir
+#### You can cheak output in this dirctory
 
 ![diroutput](images-md/diroutput.png)
 
-#### customs file
+#### You can customs port and number of file in this file
+##### Customs number of file 
+- nano action.sh
+![actionfile](images-md/actionfile2.png)
 
-##### customs number of file in dir
-![actionfile](images-md/actionfile.png)
+##### Customs port and Input
+- nano logstash.conf
+![logstashfile](images-md/logstashfile2.png)
 
-##### customs port
-![logstashfile](images-md/logstashfile.png)
-	 and this file
-![dockercompose](images-md/dockercompose.png)
-	
-
-# HA service	
-
+##### If you customs port, you must config port of containers in this file
+- nano docker-compose.yml
+![dockercompose](images-md/dockercompose2.png)
 
 	
 	
