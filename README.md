@@ -49,18 +49,25 @@
 ![diroutput](images-md/diroutput.png)
 
 # Optional
-#### You can customs port and number of file in this file
-##### Customs number of file 
-- nano action.sh
+
+##### Customs number of file
+
+###### If you want to configure the number of files, you can do so in the action.sh file by modifying the NUMFILE parameter
+###### The default parameter is 90 file
+
+- nano dev/action.sh
 ![actionfile](images-md/actionfile3.png)
 
 ##### Customs port and Input
+###### You can customs port for receive syslog in logstash.conf and docker-compose.yml files. 
+
+###### In logstash.conf you can config other output also
 - nano logstash.conf
 ![logstashfile](images-md/logstashfile2.png)
 
-##### If you customs port, you must config port of containers in this file
 - nano docker-compose.yml
 ![dockercompose](images-md/dockercompose3.png)
+
 	
 
 
