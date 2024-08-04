@@ -43,7 +43,7 @@
 	- [ ] end
 	
 	
-#### You can cheak output in this dirctory
+#### You can check output in this dirctory
 
 - cd outputlogs/
 ![diroutput](images-md/diroutput.png)
